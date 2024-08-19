@@ -10,6 +10,12 @@
     width: 100vw;
 }
 
+.logo {
+    padding: 25px;
+    margin: 25px;
+    
+}
+
 .texto {
     position: absolute;
     background-color: #eedbf8;
@@ -30,10 +36,33 @@
     
 }
 
+.texto:focus,
+.texto:active {
+    border: none;
+    outline: none;
+}
+
 
 .condiciones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 12px;
+    color: #495057;
     line-height: 18px;
+    top: 721px;
+    left: 240px;
+    opacity: 80%;
+    flex-grow: 0;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: ;
 }
