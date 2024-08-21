@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de texto</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilos.css">
 </head>
-<body>
-<main>
-        <div class="contenedor">
-         <div class="encriptador">
+<body class="body">
+<main class="contenedor">
+        <div class="encriptador">
             <textarea name="texto" id="texto" 
             class="texto" placeholder="Ingrese el texto aquí"></textarea> 
             <img src="img/logo.png" alt="logo-alura" class="logo">
@@ -20,22 +20,22 @@
                         <button class="boton-encriptar" type="button" 
                         onclick="encriptar()">Encriptar</button>
                         <button class="boton-desencriptar" type="button" 
-                        onclick="desencriptar()">Desencriptar</button>
-                    </div>   
+                        onclick="desencriptar()">Desencriptar</button></div>   
           </div>
-        
             <div class="encriptado">
-                <img src="" alt="" id="imagen">
+                <textarea name="mensaje" id="mensaje" class="mensaje" rows="10" cols="30"></textarea>
                 <div class="mensaje-encriptado" id="mensaje-encriptado">
+                    <img src="img/muñeco.png" alt="muñeco" id="imagen">
                     <h1 id="mensaje-titulo">Ningun mensaje fue encontrado</h1>
                     <p id="mensaje-nota">Ingresa el texto que desees encriptar o desencriptar</p>
-                    <textarea name="mensaje" id="mensaje" class="mensaje"></textarea>
                     <button class="copiar" type="button" onclick="copiar()">Copiar</button>
+                    </div>
                 </div>
-            </div>
-    </div> 
+        </div> 
 </main> 
- <footer></footer>        
+ <footer class="footer"> 
+    <p>Desarrollado por Sheyla De Leon</p>
+ </footer>        
 </body>
 <script src="app.js"></script>
 </html>
