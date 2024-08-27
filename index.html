@@ -8,34 +8,39 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body class="body">
-<main class="contenedor">
+    <header class="header">
+        <img src="img/logo.png" alt="logo-alura" class="logo">
+    </header>
+    <main class="contenedor">
         <div class="encriptador">
             <textarea name="texto" id="texto" 
             class="texto" placeholder="Ingrese el texto aquí"></textarea> 
-            <img src="img/logo.png" alt="logo-alura" class="logo">
-                <div class="condiciones">
-                    <img src="img/circulo.png">
-                    <p>Solo letras minúsculas y sin acentos.</p></div>
-                    <div class="botones">
-                        <button class="boton-encriptar" type="button" 
-                        onclick="encriptar()">Encriptar</button>
-                        <button class="boton-desencriptar" type="button" 
-                        onclick="desencriptar()">Desencriptar</button></div>   
-          </div>
-            <div class="encriptado">
-                <textarea name="mensaje" id="mensaje" class="mensaje" rows="10" cols="30"></textarea>
+        <div class="condiciones">
+            <img src="img/circulo.png">
+            <p>Solo letras minúsculas y sin acentos.</p>
+        </div>
+         <div class="botones">
+            <button class="boton-encriptar" type="button" 
+            onclick="encriptar()">Encriptar</button>;
+            <button class="boton-desencriptar" type="button" 
+            onclick="desencriptar()">Desencriptar</button>;
+        </div>   
+        </div>
+        <div class="encriptado">
+            <textarea name="mensaje" id="mensaje" class="mensaje" rows="10" cols="30"></textarea>
                 <div class="mensaje-encriptado" id="mensaje-encriptado">
                     <img src="img/muñeco.png" alt="muñeco" id="imagen">
-                    <h1 id="mensaje-titulo">Ningun mensaje fue encontrado</h1>
-                    <p id="mensaje-nota">Ingresa el texto que desees encriptar o desencriptar</p>
-                    <button class="copiar" type="button" onclick="copiar()">Copiar</button>
-                    </div>
+                    <div class="contenedor-parrafo">
+                    <h3 id="mensaje-titulo">Ningun mensaje fue encontrado</h1>
+                    <p id="mensaje-nota">Ingresa el texto que desees encriptar o desencriptar</p></div>
+
+                    <button class="copiar" type="button" onclick="copiar()">Copiar</button>  
                 </div>
         </div> 
-</main> 
- <footer class="footer"> 
-    <p>Desarrollado por Sheyla De Leon</p>
- </footer>        
+    </main> 
+     <footer class="footer"> 
+        <p>Desarrollado por Sheyla De Leon</p>
+    </footer>        
 </body>
 <script src="app.js"></script>
 </html>

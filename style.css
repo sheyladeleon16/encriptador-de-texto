@@ -7,17 +7,23 @@
     min-height: 100%;
 }
 .contenedor {
+    display: flex;
     flex-direction: row;
+    
     width: 100vw;
     height: 100vh;
     position: relative;
     background-color: #eedbf8;
 }
 
+.header {
+    background-color: #eedbf8;
+}
+
 .logo {
-    padding: 25px;
-    margin: 25px;
-    
+    padding: 0px;
+    margin: 20px;
+    background-color: #eedbf8;
 }
 
 .texto {
@@ -27,7 +33,7 @@
     height: 388px;
     width: 680px;
     left: 240px;
-    top: 158px;
+    top: 100px;
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -58,7 +64,7 @@
     font-size: 12px;
     color: #495057;
     line-height: 18px;
-    top: 569px;
+    top: 499px;
     left: 240px;
     opacity: 80%;
     flex-grow: 0;
@@ -70,7 +76,7 @@
     align-items: flex-start;
     width: 630px;
     height: 67px;
-    top: 605px;
+    top: 515px;
     padding: 1% 0;
     left: 240px;
     gap: 24px;
@@ -81,6 +87,7 @@
     display: flex;
     justify-content: center;
     width: 328px;
+    position: absolute;
     height: 67px;
     font-family: "Inter", sans-serif;
     font-size: 16px;
@@ -103,6 +110,8 @@
     justify-content: center;
     width: 328px;
     height: 67px;
+    position: absolute;
+    left: 350px;
     font-family: "Inter", sans-serif;
     font-size: 16px;
     font-style: normal;
@@ -118,14 +127,14 @@
  }
 
  .boton-encriptar:hover {
-    margin: 0.3%;
-    width: 47.5%;
-    padding: 1.8%;
+    margin: 0.1%;
+    width: 53%;
+    padding: 1.5%;
 
  }
   
  .boton-desencriptar:hover {
-    margin: 0.3%;
-    width: 45.5%;
-    padding: 0.8%;
+    margin: 0.1%;
+    width: 53.5%;
+    padding: 0.5%;
  }

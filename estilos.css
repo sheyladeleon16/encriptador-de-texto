@@ -2,10 +2,10 @@
     display: flex;
     justify-content: center;
     position: absolute;
-    width: 380px;
-    height: 670px;
+    width: 350px;
+    height: 590px;
     left: 1000px;
-    top: 30px;
+    top: 2px;
     background-color: #ffffff;
     box-shadow: 0px 14px 12px -8px rgba(0, 0, 0, 0.08);
     border-radius: 34px;
@@ -20,6 +20,7 @@
    gap: 16px;
    position: absolute;
    width: 100%;
+   height: 600px;
    top: 5%;
    text-align: center;
 
@@ -27,17 +28,22 @@
 
  .mensaje{
     position: absolute;
-    width: 350px;
-    height: 644px;
-    top: 10px;
+    width: 320px;
+    height: 544px;
+    top: 40px;
     border: none;
-    
-    
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 48px;
  }
- 
+
  .copiar {
     display: flex;
+    position: absolute;
     justify-content: center;
+    top: 420px;
     width: 300px;
     height: 60px;
     font-family: "Inter", sans-serif;
@@ -56,38 +62,53 @@
 
  .copiar:hover {
     margin: 0.3%;
-    width: 68.5%;
-    padding: 4.1%; 
+    width: 85%;
+    padding: 1.8%;
  }
     
- .mensaje-encriptado h2 {
+ .contenedor-parrafo h3 {
    display: flex;
    align-items: center;
    text-align: center;
    font-family: "Inter", sans-serif;
    font-style: normal;
    color: #343A40;
-   font-weight: 700;
+   font-weight: 600;
    font-size: 24px;
    line-height: 28.8px;
-   position: absolute;
    padding: 1%;
-   width: 100%;
-   top: 65%;
-
+   width: 300px;
+   top: 5px;
  }
 
- .mensaje-encriptado p {
+ .contenedor-parrafo p {
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
-    width: 80%;
+    line-height: 14px;
+    width: 300px;
     color: #495057;
+ }
 
+ .mensaje-encriptado img {
+    display: flex;
+    position: absolute;
+    width: 280px;
+    padding: 0px;
+    top: 50px;
+ }
+
+ .contenedor-parrafo {
+    box-sizing: border-box;
+    position: absolute;
+    top: 310px;
+ }
+
+ .ocultar {
+   display: none;
  }
 
 .footer { 
@@ -111,56 +132,95 @@
     .texto {
         font-size: 37px;
         width: 688px;
-        height: 48px;
-        left: 100px;
-        top: 240px;
+        height: 548px;
+        left: 150px;
+        top: 80px;
     }
     .condiciones {
         width: 229px;
         left: 40px;
-        top: 836px;
+        top: 736px;
         left: 150px;
         gap: 8px;
         font-size: 12px;
         align-items: center;
     }
     .botones {
-        width: 900px;
+        width: 850px;
         left: 150px;
-        top: 900px;
+        top: 800px;
         gap: 24px;
         height: 67px;
+        height: fit-content;
     }
     .encriptado {
+        align-content: center;
         width: 688px;
         height: 133px;
-        top: 1001px;
+        top: 901px;
         left: 120px;
         border-radius: 32px;
         padding: 32px;
         gap: 32px;
     }
     .mensaje {
-        width: 688px;
+        width: 668px;
         height: 133px;
         top: 0px;
-        left: 40px;
+        left: 10px;
         border-radius: 32px;
         padding: 32px;
         gap: 32px;  
     }
+    .mensaje-encriptado {
+        width: 100px;
+        gap: 20px;
+        padding: 0px;
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
+    }
+   .contenedor-parrafo h3 {
+    top: 10px;
+    justify-content: center;
+    font-size: 30px;
+    padding: 0px;
+    margin: 0px;
+   }
+   .contenedor-parrafo {
+    top: 25px;
+   }
     .mensaje-encriptado img {
         visibility: hidden;
         top: 0%;
         display: none;
+        padding: 0;
+        margin: 0;
     }
+   .copiar {
+    top: 120px;
+   }
+   .boton-encriptar:hover {
+    margin: 0.3%;
+    width: 37%;
+    padding: 1.8%;
+   }
+   .boton-desencriptar:hover {
+    margin: 0.3%;
+    width: 37%;
+    padding: 1.8%;
+   }
+   .copiar:hover {
+    margin: 0.3%;
+    width: 280px;
+    padding: 0.8%;
+   }
  } 
 
  @media (max-width: 550px) {
     .contenedor {
         display: flex;
         flex-direction: row;
-        
     }
     .logo {
         width: 70px; 
@@ -172,11 +232,11 @@
     }
     .texto {
         font-size: 37px;
-        width: 288px;
+        width: 268px;
         font-size: 25px;
-        height: 248px;
-        left: 30px;
-        top: 120px;
+        height: 348px;
+        left: 55px;
+        top: 20px;
     }
      .condiciones {
         width: 229px;
@@ -184,52 +244,87 @@
         top: 386px;
         left: 40px;
         gap: 8px;
-        font-size: 10px;
+        font-size: 12px;
         align-items: center; 
     }
     .botones {
         flex-direction: column;
-        width: 550px;
+        width: 100px;
         left: 50px;
         top: 420px;
         gap: 14px;
         height: 237px;
         padding: 10px;
         margin: 5px;
+        height: fit-content;
     }
     .encriptado {
         align-items: center;
         width: 258px;
-        height: 193px;
-        top: 625px;
+        height: 173px;
+        top: 595px;
         left: 40px;
         border-radius: 32px;
         padding: 32px;
         gap: 32px;
     }
     .mensaje {
-        width: 228px;
-        height: 83px;
-        top: 10px;
-        left: 20px;
+        width: 178px;
+        height: 153px;
+        top: 9px;
+        left: 40px;
         border-radius: 32px;
         padding: 32px;
         gap: 32px;  
     }
     .boton-encriptar {
-        width: 260px; 
+        position: absolute;
+        width: 230px;
+        left: 20px; 
      }
      .boton-desencriptar {
-        width: 260px;
+        width: 230px;
+        left: 20px;
+        top: 90px;
      }
      .copiar {
-        width: 260px;
+        width: 160px;
         padding: 20px;
+        top: 140px;
      }
-     .mensaje-encriptado h1 {
-        font-size: 24px;
+     .mensaje-encriptado {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
+        
      }
-     .mensaje-encriptado p {
-        font-size: 14px;
+     .contenedor-parrafo h3 {
+        font-size: 20px;
+     }
+     .contenedor-parrafo p {
+        font-size: 16px;
+     }
+     .contenedor-parrafo {
+        top: 30px;
+     }
+     .boton-encriptar:hover {
+        margin: 0.3%;
+        width: 225px;
+        padding: 4.1%; 
+     }
+     .boton-desencriptar:hover {
+        margin: 0.3%;
+        width: 225px;
+        padding: 4.1%; 
+     }
+     .copiar:hover {
+        margin: 0.3%;
+        width: 155px;
+        padding: 4.1%; 
+     }
+     .footer {
+        width: 95%;
      }
 }
